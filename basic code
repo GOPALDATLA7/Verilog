@@ -1,0 +1,11 @@
+module module_name(a,b,c);
+  input a,b;
+  output c;
+  assign c=a&b;     #and operation between a and b
+endmodule
+
+
+
+module, endmodule are keywords
+port declaration - input, output
+functionlaity - assign
