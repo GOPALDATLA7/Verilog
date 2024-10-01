@@ -46,3 +46,4 @@ Case: === !==
 
 Equality operators have the same precedence amongst them and are lower in precedence than relational operators. The result is 1 if true, and O if false. If either of the operands of logical-equality (==) or logical-inequality (!=) is X or Z, then the result will be X. You may use case-equality operator (===) or case-inequality operator (!==) to match including X and Z and will always have a known value.
 # Arthmetic Operators
++  * / %
