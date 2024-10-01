@@ -1,6 +1,6 @@
 /*RELATIONAL OPERATORS*/
 /*< <= >= >*/
-module shift();
+module relational();
     reg a=4,b=10,w,x,y,z;
     initial
         begin
