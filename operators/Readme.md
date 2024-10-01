@@ -1,5 +1,23 @@
 # Operators
-# # Logical Operators
+Logical Operators
+
+Bitwise Operators
+
+Reduction Operators
+
+Shift Operators
+
+Concatenation  Operators
+
+Relational Operators
+
+Equality Operators
+
+Conditional Operators
+
+Arthmetic Operators
+
+# Logical Operators
 AND - && , OR - || , NOT - !
 
 For AND(&&)
