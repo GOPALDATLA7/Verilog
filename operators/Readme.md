@@ -1,5 +1,5 @@
 # Operators
-# #Logical Operators
+# # Logical Operators
 AND - && , OR - || , NOT - !
 
 For AND(&&)
