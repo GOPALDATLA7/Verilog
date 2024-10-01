@@ -4,8 +4,5 @@ Note: output will be 1-True, 0-False, x-Unknown
 AND - && , OR - || , NOT - !
 
 For AND
-If both the inputs are high the output is also high(TRUE) 
 
-If one of the input is unknown then the output is also unknown
-
-If one of the input is low so it fails.
+If both the inputs are high the output is also high(TRUE), if one of the input is unknown then the output is also unknown, if one of the input is low so it fails.
