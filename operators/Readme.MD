@@ -14,3 +14,6 @@ If one of the input is high then the output is high else low.
 For NOT(!)
 
 It is opposite to above operations.
+# Bitwise Operators
+AND - & , OR - |, XOR - ^, NEGATION - ~,XNOR - ~^ or ^~
+
