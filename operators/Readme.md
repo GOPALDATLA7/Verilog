@@ -33,4 +33,10 @@ For NOT(!)
 
 It is opposite to above operations.
 # Bitwise Operators
-AND - & , OR - |, XOR - ^, NEGATION - ~,XNOR - ~^ or ^~
+AND - & , OR - |, XOR - ^, NEGATION - ~,XNOR - ~^
+
+All these operations will happen bit by bit.
+
+a = 111, b = 101 then y=a&b is a[2] & b[2]=y[2] .... output is 101
+# Reduction Operators
+
