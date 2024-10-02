@@ -12,7 +12,7 @@ endmodule
 module full_adder_tb();
 reg a,b,cin;
 wire sum,carry;
-full_adder dut(a,b,cin,sum,carry);
+full_adder DUT(a,b,cin,sum,carry);
 initial
     begin
         a=0;b=0;cin=0;
