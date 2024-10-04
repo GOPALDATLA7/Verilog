@@ -37,7 +37,12 @@ Equality operators have the same precedence amongst them and are lower in preced
 +, -, *, /, %
 
 Performs arthmetic operations between two operands.
-## Encoder
+## Combinational Circuits
+### Encoders
 1. Converts human understandable into machine understandable codes.
 2. Assign a binary code to an active input line.
 3. Produces n no. of outputs where there is 2^n no. of outputs.
+### Decoders
+1. Converts machine understandable into human understandable codes.
+2. Convert 2^n no. of outputs where there is n no. of outputs.
+3. Used in wide variety of applications, including data demultiplexing, seven segement displays, and memory address decoding.
