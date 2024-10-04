@@ -37,3 +37,7 @@ Equality operators have the same precedence amongst them and are lower in preced
 +, -, *, /, %
 
 Performs arthmetic operations between two operands.
+## Encoder
+1. Converts human understandable into machine understandable codes.
+2. Assign a binary code to an active input line.
+3. Produces n no. of outputs where there is 2^n no. of outputs.
