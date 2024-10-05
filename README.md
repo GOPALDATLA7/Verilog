@@ -50,7 +50,8 @@ Performs arthmetic operations between two operands.
 1. A device that selects between several analog or digital signals and forwards the selected input signal to a single output line.
 2. The selection is directed by a seperate set of digital input select lines.
 3. It consists of 2^n inputs , n no. of select lines.
-// Note: Must refer Shannon's expression.
+
+// Note: For Mux we must refer Shannon's expression.
 
         Shannon's expression for a 2:1 Mux is Y= ~S.I0 + S.I1
         Shannon's expression for a 4:1 Mux is Y= ~S1.~S0.I0 + ~S1.S0.I1 + S1.~S0.I2 + S1.S0.I3
