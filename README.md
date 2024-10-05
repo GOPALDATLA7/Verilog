@@ -46,3 +46,15 @@ Performs arthmetic operations between two operands.
 1. Converts machine understandable into human understandable codes.
 2. Convert 2^n no. of outputs where there is n no. of outputs.
 3. Used in wide variety of applications, including data demultiplexing, seven segement displays, and memory address decoding.
+### Mux (Multiplexer)
+1. A device that selects between several analog or digital signals and forwards the selected input signal to a single output line.
+2. The selection is directed by a seperate set of digital input select lines.
+3. It consists of 2^n inputs , n no. of select lines.
+// Note: Must refer Shannon's expression.
+
+        Shannon's expression for a 2:1 Mux is Y= ~S.I0 + S.I1
+        Shannon's expression for a 4:1 Mux is Y= ~S1.~S0.I0 + ~S1.S0.I1 + S1.~S0.I2 + S1.S0.I3
+### DeMux (Demultiplexer)
+1. A device that takes single input signal and then selects one output single line.
+2. The selection is directed by a seperate set of digital input select lines.
+3. It consists of 2^n ouputs , n no. of select lines.
