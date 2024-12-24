@@ -72,8 +72,55 @@ Equality operators have the same precedence amongst them and are lower in preced
 Performs arthmetic operations between two operands.
 ## Compiler Directives
 $display or $write - To display/prints the message inside the command.
+
 $strobe - Print the message in last of the execution.
+
 $monitor - It dispalys every time when their is a change in the value of argument.
+
+$stop - Causes  simulation to be suspended.
+
+$finish - This task makes the simulator exit.
+
+$time - System function returns time(64 bit).
+
+$random - To provides a mechanism for generating random numbers(32 bit).
+## Assignments
+### Continuous Assignments
+1. Assigns values to nets.
+2. This assignments occurs whenever the value of the right-hand side changes.
+3. Executes in parallel.
+
+       wire x,y,z;
+       assign x = a & c;
+       assign y = a ^ b;
+       assign z = b || c;
+### Procedural Assignments
+1. Update the value of variables under the control of the procedural flow constructs that surround them.
+2. Each procedure represents a separate activity flow in verilog, all of which run in parallel.
+
+       begin
+           if (sel == 0)
+               z = a;
+           else
+               z = b;
+       end
+#### Initial Block
+1. Execution starts at zero simulation time.
+2. Once executable only
+
+       initial
+           begin
+               ........
+               ........  //Parallel execution.
+           end
+#### Always Block
+1. Repeats continuously throughout the duration of the simulation.
+2. Loops continuously.
+
+       always
+           begin
+
+           end
 ## Combinational Circuits
 ### Encoders
 1. Converts human understandable into machine understandable codes.
