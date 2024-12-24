@@ -91,3 +91,5 @@ Performs arthmetic operations between two operands.
 1. A device that takes single input signal and then selects one output single line.
 2. The selection is directed by a seperate set of digital input select lines.
 3. It consists of 2^n ouputs , n no. of select lines.
+## Sequential Circuits
+### Latch
