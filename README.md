@@ -247,10 +247,10 @@ Given Below are the Types of Flip-Flop
 4. Less number of states. Obviously, less number of flipflops are sufficient for implementation.
 5. Not safe to use.
 6. Area efficient.
-7. ### Mealy 
-1. Output depends on both input & current state of the circuit
+### Moore 
+1. Output depends only both on current state of the circuit
 2. Next state is dependent on both input & current state.
-3. Outputs are Asynchronous. So, glitches can occur.
-4. Less number of states. Obviously, less number of flipflops are sufficient for implementation.
-5. Not safe to use.
-6. Area efficient.
+3. Outputs are Synchronous. So, glitches can never occur.
+4. More number of states. Obviously, more number of flipflops are sufficient for implementation.
+5. Safe to use.
+6. Not area efficient.
