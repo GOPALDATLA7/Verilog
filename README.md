@@ -181,11 +181,11 @@ Multiway decision statement that tests whether an expression matches one of a nu
             end
 #### for loop
 
-for(i=0;i<10;i++)
+    for(i=0;i<10;i++)
 #### while loop
 Executes a statement until the expression becomes false.
 
-While(...)
+    While(...)
 ## Combinational Circuits
 ### Encoders
 1. Converts human understandable into machine understandable codes.
