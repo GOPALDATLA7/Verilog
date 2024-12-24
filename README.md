@@ -3,20 +3,19 @@ Verilog, standardized as IEEE 1364, is a hardware description language (HDL) use
 ## Abstraction Levels
 1. Circuit Level : CMOS
 2. Gate Level : Using logic gates like and, or.. etc.
-
    Y = A & B 
 3. Data Flow Level : RTL(Register Transfer Level), Realized through concurrent assignments.
 
-              Y = (A & B) | C
+   Y = (A & B) | C
 4. Behavioral Level : Highest level of design description.
-
-              always@(a,b,sel)
-                         begin
-                                    if(sel == 0)
-                                               out = a;
-                                    else
-                                               out = b;
-                         end
+   
+         always@(a,b,sel)
+            begin
+               if(sel == 0)
+                  out = a;
+               else
+                  out = b;
+            end
 ## Operators
 ### 1. Logical Operators
 AND - && , OR - || , NOT - !
