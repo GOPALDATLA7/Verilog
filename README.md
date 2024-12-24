@@ -119,8 +119,73 @@ $random - To provides a mechanism for generating random numbers(32 bit).
 
        always
            begin
-
+                .........
            end
+#### Sensitivity List
+Without sensitivity list, the always block will loop continuously without waiting for a triggering event.
+
+        always@(a or b or sel)    //Sensitivity list is (a or b or sel)
+            begin
+                if(sel == 1)
+                    z = a;
+                else
+                    z = b;
+            end
+### Blocking Assignments
+1. These are represented with the sign '='.
+2. These are executed sequentially.
+3. One statement blocks the execution of the other statements until it is executed.
+4. Any details attached is also got added to delay in execution of next statements.
+5. For combinational we use blocking assignments.
+
+       always@(posedge clk)
+           begin
+               a = 1'b0;
+               b = 1'b1;
+               a = b;
+               b = #5 a;
+           end
+### Non-Blocking Assignments
+1. A non-blocking assignment is represented with the sign '<='.
+2. Its execution is concurrent with that of the following assignment or activity.
+3. For all the non-blocking assignments in a block, the right-hand sides are evaluated first. Subsequently the specified assignments are scheduled.
+4. It is illegal to use a non-blocking assignment in a continuous assignment statement or in a net declaration.
+5. For sequential we use non-blocking assignments.
+
+       initial
+           begin
+               a <= 1'b1;
+               b <= 1'b0;
+               c <= b;
+           end
+#### if else statement
+The if construct checks a specific condition and decides execution based on the result.
+
+        always@(...)
+            begin
+                if(condition)
+                    ----
+                else
+                    ----
+            end
+#### Case statement
+Multiway decision statement that tests whether an expression matches one of a number of other expressions and branches accordingly.
+
+        always@(a or b or c or x)
+            begin
+                case (x)
+                    0 : z = a;
+                    1 : z = b;
+                    default : z = c;
+                endcase
+            end
+#### for loop
+
+for(i=0;i<10;i++)
+#### while loop
+Executes a statement until the expression becomes false.
+
+While(...)
 ## Combinational Circuits
 ### Encoders
 1. Converts human understandable into machine understandable codes.
