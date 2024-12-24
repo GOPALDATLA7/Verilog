@@ -70,6 +70,10 @@ Equality operators have the same precedence amongst them and are lower in preced
 +, -, *, /, %
 
 Performs arthmetic operations between two operands.
+## Compiler Directives
+$display or $write - To display/prints the message inside the command.
+$strobe - Print the message in last of the execution.
+$monitor - It dispalys every time when their is a change in the value of argument.
 ## Combinational Circuits
 ### Encoders
 1. Converts human understandable into machine understandable codes.
