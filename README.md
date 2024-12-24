@@ -17,12 +17,9 @@ Verilog, standardized as IEEE 1364, is a hardware description language (HDL) use
                   out = b;
             end
 ## Data Types
-Their are two data types 1. Net or Wire
-                         2. Reg
-### Net or Wire
-Nets are continuously driven by combinational logic. They does not hold any value. The default value of Net is 'Z'.
-### Reg
-They hold value. Values retained until updated. The default value of Reg is 'X'.
+Their are data types like : Net or Wire, Reg, Integer, Real, Time.
+Net or Wire : Nets are continuously driven by combinational logic. They does not hold any value. The default value of Net is 'Z'.
+Reg : They hold value. Values retained until updated. The default value of Reg is 'X'.
 ### Values
 0 - Represents a logic zero.
 1 - Represents a logic one.
