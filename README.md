@@ -210,3 +210,47 @@ While(...)
 3. It consists of 2^n ouputs , n no. of select lines.
 ## Sequential Circuits
 ### Latch
+Latches are digital circuits that store a single bit of information and hold its value until it is updated by new input signals. They are used in digital systems as temporary storage elements to store binary information.
+
+In digital electronics different types of latches are:
+1. SR Latches
+2. Gated SR Latches
+3. D Latches
+4. Gated D Latches
+5. JK Latches
+6. T Laches
+### Flip Flop
+Flip-flops and latches are used as data storage elements to store a single bit (binary digit) of data; one of its two states represents a "one" and the other represents a "zero". Such data storage can be used for storage of state, and such a circuit is described as sequential logic in electronics.
+
+Given Below are the Types of Flip-Flop
+1. SR Flip Flop
+2. JK Flip Flop
+3. D Flip Flop
+4. T Flip Flop
+### Registers
+1. Group of many flipflops to store mulltiple bits of information is called Register.
+2. Register can be used to perform the following two different functions.
+       1. Data storing
+       2. Data shifting (SISO, SIPO, PISO, PIPO)
+### Counters
+1. It counts the number of clock pulses.
+2. Counting can be done by sequential or random manner.
+## FSM
+1. Systematic way of specifying any sequential logic.
+2. Different models in FSM are :
+       1. Mealy Model
+       2. Moore Model
+### Mealy 
+1. Output depends on both input & current state of the circuit
+2. Next state is dependent on both input & current state.
+3. Outputs are Asynchronous. So, glitches can occur.
+4. Less number of states. Obviously, less number of flipflops are sufficient for implementation.
+5. Not safe to use.
+6. Area efficient.
+7. ### Mealy 
+1. Output depends on both input & current state of the circuit
+2. Next state is dependent on both input & current state.
+3. Outputs are Asynchronous. So, glitches can occur.
+4. Less number of states. Obviously, less number of flipflops are sufficient for implementation.
+5. Not safe to use.
+6. Area efficient.
