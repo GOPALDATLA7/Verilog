@@ -116,6 +116,7 @@ $random - To provides a mechanism for generating random numbers(32 bit).
 #### Always Block
 1. Repeats continuously throughout the duration of the simulation.
 2. Loops continuously.
+3. The LHS should be reg data type.
 
        always
            begin
@@ -235,6 +236,31 @@ Given Below are the Types of Flip-Flop
 ### Counters
 1. It counts the number of clock pulses.
 2. Counting can be done by sequential or random manner.
+## Tasks and Functions
+### Task
+1. They can enable other tasks and functions.
+2. They execute in non-zero simulation time.
+3. Tasks may include delays, timing or timing control statements.
+4. They may have zero or more arguments of type input, output or inout.
+5. Tasks do not return a value but can pass multiple values through output and inout arguments.
+
+       task task_name(input/output/inout arguments);
+           begin
+               ---------
+           end
+       endtask
+### Function
+1. They can enable other function but not task.
+2. They always execute in zero simulation time.
+3. Functions must not include delay, timing or timing control statememts.
+4. Functions must have atleast one input argument.
+5. They return a single value. They cannot have output or inout arguments.
+
+       function function_name(input input_argument);
+           begin
+               ------
+           end
+       endfunction
 ## FSM
 1. Systematic way of specifying any sequential logic.
 2. Different models in FSM are :
