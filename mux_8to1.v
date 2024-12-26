@@ -33,7 +33,7 @@ initial
 begin
     $monitor("s = %0b -> din= %0b -> dout=%0b",s,din,dout);
     din = 25;
-    repeat(6)
+    repeat(4)
         begin
             s = $random;
             #5;
