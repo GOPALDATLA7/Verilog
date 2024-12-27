@@ -1,4 +1,4 @@
-//4bit Loadable up counter
+//4bit Synchronous Loadable up counter
 /*It contains signals like Reset, Clock, [3:0]Data_in, Load, [3:0]count*/ 
 /*If the reset is high then the count will reset to 0, else then if the load is applied then the count will start*/
 //RTL
