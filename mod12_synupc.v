@@ -40,16 +40,16 @@ module mod12_synupc_tb();
 
     task reset;
     begin
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b1;
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b0;
     end
     endtask
 
     task inputs(input [3:0]i);
     begin
-        @(negedge clk)
+        @(posedge clk)
         in=i;
     end
     endtask
