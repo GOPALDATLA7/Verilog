@@ -40,30 +40,30 @@ module syn_up_down_counter_tb( );
 
     task reset;
     begin
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b1;
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b0;
     end
     endtask
 
     task modes(input j);
     begin
-        @(negedge clk)
+        @(posedge clk)
         mode=j;
     end
     endtask
 
     task loads(input f);
     begin
-        @(negedge clk)
+        @(posedge clk)
         load=f;
     end
     endtask
 
     task inputs(input [3:0]i);
     begin
-        @(negedge clk)
+        @(posedge clk)
         in=i;
     end 
     endtask
