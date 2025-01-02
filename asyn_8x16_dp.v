@@ -65,16 +65,16 @@ module as8x16dp_tb( );
 
     task wr_clear;
     begin
-        @(negedge wr_clk);
+        @(posedge wr_clk);
         clr=1'b1;
-        #20 @(negedge wr_clk);
+        #20 @(posedge wr_clk);
         clr=1'b0;
     end  
     endtask
 
     task write(input[15:0]i,input[2:0]j,input k);
     begin
-        @(negedge wr_clk);
+        @(posedge wr_clk);
         din=i;
         wr_addr=j;  
         we=k;
@@ -83,7 +83,9 @@ module as8x16dp_tb( );
 
     task read(input[2:0]m,input n);
     begin
-        @(negedge rd_clk) rd_addr=m;re=n;
+        @(posedge rd_clk) 
+        rd_addr=m;
+        re=n;
     end
     endtask
 
@@ -93,5 +95,6 @@ module as8x16dp_tb( );
         wr_clear;
         #10 write({$random},3'b101,1'b1);
         #10 read(3'b101,1'b1);
+        #50 $finish;
     end
 endmodule
