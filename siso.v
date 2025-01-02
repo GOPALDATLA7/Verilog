@@ -39,16 +39,16 @@ module siso_tb();
 
     task reset;
     begin
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b1;
-        @(negedge clk)
+        @(posedge clk)
         rst=1'b0;
     end   
     endtask
 
     task inputs(input i);
     begin
-        @(negedge clk)
+        @(posedge clk)
         sin=i;
     end 
     endtask
